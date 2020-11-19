@@ -1,0 +1,89 @@
+/* hide form label */
+.form-input label {
+	position: absolute;
+	left: -99999px;
+}
+
+/* hide form message */
+.form-message {
+  display: none;
+}
+
+* {
+ box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 1rem;
+  background-color: #BA0000;
+  height: 100vh;
+  /*place-items: center;*/
+
+}
+
+main { 
+ padding: 0;
+ margin: 0;
+ display: grid;
+ grid-template-columns: 1fr;
+ /*grid-template-rows: repeat(3, 1fr);*/
+ grid-template-rows: auto 1fr auto;
+ grid-gap: 1rem;
+ justify-items: center;
+}
+
+/*.img1{
+  width: 50%;
+  background-size: 100% 100%;
+}
+*/
+
+h1 {
+  text-align: center;
+}
+
+.img2 {
+  width: 100%;
+  /*background-size: 100% 100%;*/
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: 0;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  grid-row: 2;
+  grid-column: 1;
+}
+
+form{
+  grid-row: 3;
+  grid-column: 1;
+  margin-bottom: 1rem;
+}
+
+
+
+footer {
+ /* background-color: #ccc;*/
+}
+
+ul li{
+  list-style: none;
+  display: inline;
+  color: #ffffff;
+  text-align: center;
+}
+
+li a{
+  display: inline-block;
+  color: #000;
+  text-align: center;
+}
